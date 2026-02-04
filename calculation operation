@@ -1,0 +1,42 @@
+import java.util.*;
+class operaction
+{
+	void show()
+	{
+		Scanner ob=new Scanner(System.in);
+		int a,b,c,ch;
+		System.out.println("enter the value of a=");
+		a=ob.nextInt();
+		System.out.println("enter the value of b=");
+		b=ob.nextInt();
+		System.out.println("1:addition \n2:subtraction \n3:multiplication \n4:division");
+		ch=ob.nextInt();
+		switch(ch)
+		{
+		case 1:
+			c=a+b;
+			System.out.println("addition="+c);
+			break;
+		case 2:
+			c=a-b;
+			System.out.println("subtraction="+c);
+			break;
+		case 3:
+			c=a*b;
+			System.out.println("multiplication="+c);
+			break;
+		case 4:
+			c=a/b;
+			System.out.println("division="+c);
+			break;
+		}
+	}
+}
+class arm
+{
+	public static void main(String args[]) 
+	{
+		operaction obj=new operaction();
+		obj.show();
+	}
+}
