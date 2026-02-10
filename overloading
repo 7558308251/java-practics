@@ -1,0 +1,26 @@
+import java.util.*;
+class over
+{
+	int c;
+	over(int o,int q)
+	{
+		c=o+q;
+		System.out.println("addition="+c);
+	}
+	over(int x,int y,int l)
+	{
+		c=x*y;
+		System.out.println("multiplicatiom="+c);
+	}
+	public static void main(String args[])
+	{
+		Scanner ov=new Scanner(System.in);
+		int a,b;
+		System.out.print("enter the value of a=");
+		a=ov.nextInt();
+		System.out.print("enter the value of b=");
+		b=ov.nextInt();
+		over m=new over(a,b);
+		over n=new over(a,b,0);
+	}
+}
